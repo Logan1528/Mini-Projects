@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 400px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .product .imgbox {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .product .imgbox img {
+            display: block;
+            width: 90%;
+            margin: 20px auto 0;
+        }
+
+        .details {
+            position: absolute;
+            width: 100%;
+            bottom: -145px;
+            background: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            transition: 0.5s;
+        }
+
+        .product:hover .details {
+            bottom: 0;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, .25);
+        }
+
+        .details h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .details h1 span {
+            font-size: 14px;
+            color: rgb(141, 137, 137);
+            font-weight: normal;
+        }
+
+        .details .price {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-weight: bold;
+            color: #04456f;
+            font-size: 20px;
+        }
+
+        .details .price strike {
+            font-weight: normal;
+            color: #cdd0d1;
+            font-size: 16px;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+            margin: 5px 5px 0;
+            font-size: 12px;
+            font-weight: normal;
+            color: rgb(145, 140, 140);
+        }
+
+        ul li:first-child {
+            margin-left: 0;
+        }
+
+        ul.colors li {
+            width: 16px;
+            height: 16px;
+        }
+
+        ul.colors li:nth-child(1) {
+            background: rgb(244, 244, 247);
+        }
+
+        ul.colors li:nth-child(2) {
+            background: #ff0;
+        }
+
+        ul.colors li:nth-child(3) {
+            background: #f0f;
+        }
+
+        ul.colors li:nth-child(4) {
+            background: #0ff;
+        }
+        ul.colors li:nth-child(5) {
+            background: #00f;
+        }
+        ul.colors li:nth-child(6) {
+            background: #000;
+        }
+
+        a {
+            display: block;
+            padding: 5px;
+            color: #fff;
+            margin: 15px 0;
+            background: #04456f;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #fff;
+            background: #00c8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="imgbox">
+            <img src=
+                "blank-white-tshirt-mockup-design_521057-9254.avif">
+        </div>
+        <div class="details">
+            <h1>Leo<br><span>Men's T-Shirt</span></h1>
+            <div class="price">
+                &#8377;799.00<br>
+                <strike>&#8377;1570.00</strike>
+            </div>
+            <label>Sizes</label>
+            <ul>
+                <li>XS</li>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+                <li>XXL</li>
+            </ul>
+            <label>Colors</label>
+            <ul class="colors">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="#">Add to Cart</a>
+        </div>
+    </div>
+</body>
+</html>
